@@ -1,0 +1,27 @@
+[phases.setup]
+nixPkgs = ["python311"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[start]
+cmd = "python main_bot/main_bot.py"
+```
+
+3. Scroll down → click **Commit new file**
+
+---
+
+### Step 3 — Go Back to Railway
+1. Go to **railway.app**
+2. Click on your **FUTO** service
+3. You will see the **Apply 9 changes** button at the top
+4. Click **Deploy** button (the purple button)
+5. Watch the logs
+
+---
+
+### Step 4 — Check Logs
+Click **View logs** next to the new deployment and look for:
+```
+🤖 Federal University of Technology Owerri MAIN BOT running...
