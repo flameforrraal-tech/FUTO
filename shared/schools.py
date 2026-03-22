@@ -94,7 +94,6 @@ SCHOOLS = {
             "petroleum":   "Petroleum Engineering Technology",
             "welding":     "Welding & Fabrication Technology",
             "polymer":     "Polymer Technology",
-            "biomedical":  "Biomedical Engineering",
         },
     },
     "sops": {
@@ -176,10 +175,9 @@ DEPT_BOT_LINKS = {
     "mechanical":    None,
     "chemical":      None,
     "industrial":    None,
-    "petroleum":     "https://t.me/PET_smart_bot"
+    "petroleum":     None,
     "welding":       None,
     "polymer":       None,
-    "biomedical":    "https://t.me/BMEsmartbot"
     # SOPS
     "physics":       None,
     "chemistry":     None,
@@ -205,7 +203,7 @@ def get_dept_name(school_key: str, dept_key: str) -> str:
     return school.get("departments", {}).get(dept_key, dept_key.replace("_", " ").title())
 
 
-def get_dept_bot(dept_key: str) -> str | None:
+def get_dept_bot(dept_key: str):
     return DEPT_BOT_LINKS.get(dept_key)
 
 
